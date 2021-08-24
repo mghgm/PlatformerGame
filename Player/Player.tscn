@@ -7,9 +7,10 @@
 radius = 5.24077
 height = 286.378
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 resource_name = "Crouch"
 length = 0.45
+loop = true
 step = 0.15
 tracks/0/type = "value"
 tracks/0/path = NodePath("Skeleton2D/Hip/LeftLeg:rotation_degrees")
@@ -18,10 +19,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.15 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 88.6294, 88.6294 ]
+"values": [ 88.6294, 88.6294, 120.015, 88.6294 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Skeleton2D/Hip/RightLeg:rotation_degrees")
@@ -30,10 +31,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.15, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 91.163, 58.4819, 91.163 ]
+"values": [ 91.163, 58.4819, 91.163, 91.163 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Skeleton2D/Hip/Chest/LeftArm:rotation_degrees")
@@ -42,10 +43,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.15 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 95.9201, 95.9201 ]
+"values": [ 95.9201, 95.9201, 125.111, 95.9201 ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Skeleton2D/Hip/Chest/RightArm:rotation_degrees")
@@ -54,10 +55,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.15, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 81.9189, 65.6371, 81.9189 ]
+"values": [ 81.9189, 65.6371, 81.9189, 81.9189 ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Skeleton2D/Hip/Chest/Head:rotation_degrees")
@@ -66,13 +67,13 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.15, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ -89.1317, -69.8889, -89.1317 ]
+"values": [ -89.1317, -77.2175, -89.1317, -89.1317 ]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=3]
 length = 0.45
 loop = true
 step = 0.15
@@ -376,18 +377,18 @@ position = Vector2( -1.53496, -11.6302 )
 rest = Transform2D( 1, 0, 0, 1, -1.81557, -11.6302 )
 
 [node name="Chest" type="Bone2D" parent="Skeleton2D/Hip"]
-position = Vector2( 1.00682, 0.990594 )
+position = Vector2( 1.14758, -21.0325 )
 rotation = -0.031294
 rest = Transform2D( 1, 0, 0, 1, 0.647575, -20.0325 )
 
 [node name="Head" type="Bone2D" parent="Skeleton2D/Hip/Chest"]
-position = Vector2( -1.1414, -12.3139 )
+position = Vector2( -0.353556, -10.6066 )
 rotation = -1.55564
 rest = Transform2D( -0.0198237, -0.999803, 0.999803, -0.0198237, -0.353556, -10.6066 )
 default_length = 10.0
 
 [node name="RightArm" type="Bone2D" parent="Skeleton2D/Hip/Chest"]
-position = Vector2( 11.4051, -15.0321 )
+position = Vector2( 18.5616, -1.76777 )
 rotation = 1.42975
 rest = Transform2D( 0.140575, 0.99007, -0.99007, 0.140575, 18.5616, -1.76777 )
 
@@ -398,7 +399,7 @@ rest = Transform2D( 0.845018, 0.534738, -0.534738, 0.845018, 26.4229, -2.49758 )
 default_length = 5.0
 
 [node name="LeftArm" type="Bone2D" parent="Skeleton2D/Hip/Chest"]
-position = Vector2( -13.8583, -14.6072 )
+position = Vector2( -18.9151, -0.883884 )
 rotation = 1.67412
 rest = Transform2D( -0.09629, 0.995353, -0.995353, -0.09629, -18.9151, -0.883884 )
 
@@ -426,6 +427,6 @@ rotation = 1.5708
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Crouch = SubResource( 3 )
-anims/Walk = SubResource( 2 )
+anims/Crouch = SubResource( 2 )
+anims/Walk = SubResource( 3 )
 anims/WalkToCrouch = SubResource( 4 )
