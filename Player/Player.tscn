@@ -12,7 +12,7 @@ length = 0.45
 loop = true
 step = 0.15
 tracks/0/type = "value"
-tracks/0/path = NodePath("BodyParts/Skeleton2D/Hip/RightLeg:rotation_degrees")
+tracks/0/path = NodePath("Skeleton2D/Hip/RightLeg:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -24,7 +24,7 @@ tracks/0/keys = {
 "values": [ 91.163, 62.7963, 91.163, 91.163 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("BodyParts/Skeleton2D/Hip/LeftLeg:rotation_degrees")
+tracks/1/path = NodePath("Skeleton2D/Hip/LeftLeg:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -36,7 +36,7 @@ tracks/1/keys = {
 "values": [ 88.6294, 88.6294, 112.11, 88.6294 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("BodyParts/Skeleton2D/Hip/Chest/RightArm:rotation_degrees")
+tracks/2/path = NodePath("Skeleton2D/Hip/Chest/RightArm:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -48,7 +48,7 @@ tracks/2/keys = {
 "values": [ 81.9189, 54.6999, 81.9189, 81.9189 ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("BodyParts/Skeleton2D/Hip/Chest/LeftArm:rotation_degrees")
+tracks/3/path = NodePath("Skeleton2D/Hip/Chest/LeftArm:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -60,7 +60,7 @@ tracks/3/keys = {
 "values": [ 95.9201, 95.9201, 121.184, 95.9201 ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("BodyParts/Skeleton2D/Hip/Chest/Head:rotation_degrees")
+tracks/4/path = NodePath("Skeleton2D/Hip/Chest/Head:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -80,7 +80,7 @@ script = ExtResource( 2 )
 [node name="RightLeg" type="Polygon2D" parent="BodyParts"]
 position = Vector2( -76.4196, -140.158 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 74.4401, 130.271, 74.7885, 151.525, 98.4819, 151.525, 98.8303, 147.344, 94.3007, 144.208, 95.346, 129.922, 87.6805, 124.347, 81.4087, 124.347 )
 uv = PoolVector2Array( 74.4401, 130.271, 74.7885, 151.525, 98.4819, 151.525, 98.8303, 147.344, 94.3007, 144.208, 95.346, 129.922, 87.6805, 124.347, 81.4087, 124.347 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ) ]
@@ -88,7 +88,7 @@ bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hi
 [node name="LeftLeg" type="Polygon2D" parent="BodyParts"]
 position = Vector2( -334.044, -140.158 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 332.203, 131.039, 332.203, 151.66, 308.757, 151.095, 308.757, 146.575, 311.864, 143.751, 311.864, 131.039, 317.232, 125.954, 326.836, 125.389 )
 uv = PoolVector2Array( 332.203, 131.039, 332.203, 151.66, 308.757, 151.095, 308.757, 146.575, 311.864, 143.751, 311.864, 131.039, 317.232, 125.954, 326.836, 125.389 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ) ]
@@ -97,7 +97,7 @@ bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hi
 position = Vector2( -1.26098, -24.7856 )
 offset = Vector2( -28.6143, -91.8871 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 47.6489, 78.3699, 47.3354, 111.599, 5.95611, 110.972, 6.89655, 77.7429 )
 uv = PoolVector2Array( 47.6489, 78.3699, 47.3354, 111.599, 5.95611, 110.972, 6.89655, 77.7429 )
 bones = [ NodePath("Hip"), PoolRealArray( 1, 1, 1, 1 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0 ) ]
@@ -106,7 +106,7 @@ bones = [ NodePath("Hip"), PoolRealArray( 1, 1, 1, 1 ), NodePath("Hip/Chest"), P
 position = Vector2( 21.5432, -23.9017 )
 offset = Vector2( -125.488, -99.6653 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 112.853, 91.536, 120.376, 119.436, 131.975, 118.495, 135.737, 100.313, 127.9, 83.0721, 120.063, 81.5047 )
 uv = PoolVector2Array( 112.853, 91.536, 120.376, 119.436, 131.975, 118.495, 135.737, 100.313, 127.9, 83.0721, 120.063, 81.5047 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0 ) ]
@@ -115,7 +115,7 @@ bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Ches
 position = Vector2( -21.7671, -27.0837 )
 offset = Vector2( -284.587, -96.8368 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 294.357, 90.9091, 284.953, 120.69, 273.668, 115.36, 272.727, 99.6865, 279.31, 84.953, 286.834, 82.7586 )
 uv = PoolVector2Array( 294.357, 90.9091, 286.207, 119.436, 273.668, 115.36, 272.727, 99.6865, 279.31, 84.953, 287.774, 82.1317 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0 ) ]
@@ -124,7 +124,7 @@ bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Ches
 position = Vector2( 22.2503, -5.16334 )
 offset = Vector2( -121.952, -139.97 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 131.034, 135.737, 127.273, 148.276, 121.944, 150.157, 110.972, 146.395, 112.539, 141.693, 111.285, 136.677, 118.182, 131.348 )
 uv = PoolVector2Array( 131.034, 135.737, 127.273, 148.276, 121.944, 150.157, 110.972, 146.395, 112.539, 141.693, 111.285, 136.677, 118.182, 131.348 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ) ]
@@ -133,7 +133,7 @@ bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/C
 position = Vector2( -22.651, -4.45622 )
 offset = Vector2( -285.294, -141.385 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 275.549, 135.737, 280.251, 149.216, 285.266, 149.53, 294.357, 146.081, 294.357, 141.379, 294.357, 136.05, 287.774, 130.721 )
 uv = PoolVector2Array( 275.549, 135.737, 280.251, 149.216, 285.266, 149.53, 294.357, 146.081, 294.357, 141.379, 294.357, 136.05, 287.774, 130.721 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0 ) ]
@@ -144,7 +144,7 @@ position = Vector2( 4.61192, -26.8846 )
 rotation = 0.0170952
 offset = Vector2( -84.4757, -89.7657 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 56.4263, 77.7429, 56.7398, 110.658, 99.0596, 110.031, 98.1191, 77.7429 )
 uv = PoolVector2Array( 56.4263, 77.7429, 56.7398, 110.658, 99.0596, 110.031, 98.1191, 77.7429 )
 bones = [ NodePath("Hip"), PoolRealArray( 1, 1, 1, 1 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0 ) ]
@@ -152,7 +152,7 @@ bones = [ NodePath("Hip"), PoolRealArray( 1, 1, 1, 1 ), NodePath("Hip/Chest"), P
 [node name="NormalFaceR" type="Polygon2D" parent="BodyParts"]
 position = Vector2( -414.572, -87.2116 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 389.969, 37.8925, 391.85, 50.4317, 401.881, 51.9991, 410.031, 57.6417, 418.182, 57.0147, 425.392, 52.626, 434.796, 51.0586, 436.677, 16.5759, 429.467, 4.97712, 431.034, -2.85987, 388.088, 9.67931, 382.759, 19.7107 )
 uv = PoolVector2Array( 389.969, 37.8925, 391.85, 50.4317, 401.881, 51.9991, 410.031, 57.6417, 418.182, 57.0147, 425.392, 51.6856, 432.288, 51.6856, 436.677, 16.5759, 429.467, 4.97712, 431.661, 1.21536, 388.088, 9.67931, 382.759, 19.7107 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
@@ -162,7 +162,7 @@ visible = false
 position = Vector2( -1.35258, -56.0281 )
 offset = Vector2( -353.031, -32.8651 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 376.489, 15.3219, 373.981, 52.3125, 363.323, 52.3125, 358.934, 55.7608, 349.216, 56.3878, 342.947, 51.0586, 333.542, 51.6856, 329.781, 37.2655, 325.078, 18.1433, 331.348, 8.42539, 369.279, -0.978996, 371.16, 5.29059 )
 uv = PoolVector2Array( 376.489, 15.3219, 374.608, 48.8643, 363.323, 52.3125, 358.934, 55.7608, 349.216, 56.3878, 342.947, 51.0586, 333.542, 51.6856, 329.781, 37.2655, 325.078, 18.1433, 331.348, 8.42539, 369.279, -0.978996, 371.16, 5.29059 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
@@ -172,7 +172,7 @@ visible = false
 position = Vector2( -3.13013, -58.3194 )
 offset = Vector2( -291.662, -28.957 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 316.667, 14.0895, 315.254, 49.6828, 305.367, 50.2477, 299.717, 55.615, 292.373, 55.615, 283.333, 49.9653, 273.164, 50.2477, 270.339, 36.1234, 265.819, 20.3042, 272.034, 6.17994, 308.475, -3.14209 )
 uv = PoolVector2Array( 316.667, 14.0895, 315.254, 49.6828, 305.367, 50.2477, 299.717, 55.615, 292.373, 55.615, 283.333, 49.9653, 273.164, 50.2477, 270.339, 36.1234, 265.819, 20.3042, 272.034, 6.17994, 308.475, -3.14209 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
@@ -182,7 +182,7 @@ visible = false
 position = Vector2( -0.746674, -59.0309 )
 offset = Vector2( -473.817, -28.1729 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 495.736, 13.9058, 496.124, 49.9523, 484.884, 49.9523, 479.457, 54.9911, 469.38, 54.9911, 462.403, 50.3399, 453.101, 50.3399, 449.612, 37.5492, 445.736, 19.3322, 450, 9.64225, 489.147, -1.59806 )
 uv = PoolVector2Array( 495.736, 13.9058, 496.124, 49.9523, 484.884, 49.9523, 479.457, 54.9911, 469.38, 54.9911, 462.403, 50.3399, 453.101, 50.3399, 449.612, 37.5492, 445.736, 19.3322, 450, 9.64225, 489.147, -1.59806 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
@@ -192,7 +192,7 @@ visible = false
 position = Vector2( 0.563034, -59.7721 )
 offset = Vector2( -84.6527, -33.5674 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 104.167, 14.9795, 109.167, 22.9795, 105.667, 42.4795, 105.167, 55.6462, 92.3333, 55.8128, 87.1667, 60.6462, 77.3333, 60.9795, 71.1667, 55.8128, 61.8333, 55.6462, 58.6667, 21.1462, 66.3333, 9.81283, 65.6667, 3.9795, 82.6667, 5.14617 )
 uv = PoolVector2Array( 104.167, 14.9795, 109.167, 22.9795, 105.667, 42.4795, 105.167, 55.6462, 92.3333, 55.8128, 87.1667, 60.6462, 77.3333, 60.9795, 71.1667, 55.8128, 61.8333, 55.6462, 58.6667, 21.1462, 66.3333, 9.81283, 65.6667, 3.9795, 82.6667, 5.14617 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
@@ -202,7 +202,7 @@ visible = false
 position = Vector2( -3.64145, -54.7268 )
 offset = Vector2( -140.362, -38.4025 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 163.667, 14.6462, 168.667, 23.8128, 165.667, 41.3128, 163.833, 55.8128, 151.833, 56.1462, 147.667, 60.1462, 137.5, 61.1462, 130.667, 55.4795, 121, 55.6462, 118.333, 21.1462, 126.167, 10.9795, 125.333, 4.9795, 144.833, 5.14617 )
 uv = PoolVector2Array( 163.667, 14.6462, 168.667, 23.8128, 165.667, 41.3128, 163.833, 55.8128, 151.833, 56.1462, 147.667, 60.1462, 137.5, 61.1462, 130.667, 55.4795, 121, 55.6462, 118.333, 21.1462, 126.167, 10.9795, 125.333, 4.9795, 144.833, 5.14617 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
@@ -212,7 +212,7 @@ visible = false
 position = Vector2( -0.0676422, -56.6188 )
 offset = Vector2( -203.009, -35.0389 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 178.333, 18.3128, 180, 53.8128, 190.333, 54.8128, 194.167, 59.8128, 206.833, 59.3128, 211.5, 55.1462, 223.5, 54.3128, 224.333, 40.8128, 228.5, 29.3128, 224.333, 13.9795, 201.167, 4.64617, 183.333, 2.64617, 184.833, 8.4795 )
 uv = PoolVector2Array( 178.333, 18.3128, 180, 53.8128, 190.333, 54.8128, 193.5, 57.8128, 206.833, 59.3128, 211.5, 55.1462, 223.5, 54.3128, 224.333, 40.8128, 228.5, 29.3128, 224.333, 13.9795, 201.167, 4.64617, 183.333, 2.64617, 184.833, 8.4795 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
@@ -222,56 +222,56 @@ visible = false
 position = Vector2( 0.352798, -56.6188 )
 offset = Vector2( -24.1081, -35.4594 )
 texture = ExtResource( 1 )
-skeleton = NodePath("../Skeleton2D")
+skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( -0.726166, 17.8128, -0.559502, 54.3128, 10.7738, 54.4795, 13.2738, 58.3128, 25.2738, 60.1462, 31.7738, 55.1462, 42.4405, 54.6462, 44.4405, 42.9795, 50.7738, 29.4795, 43.2738, 14.1462, 23.7738, 6.14617, 3.77383, 4.81283, 5.27383, 9.9795 )
 uv = PoolVector2Array( -0.726166, 17.8128, -0.559502, 54.3128, 10.7738, 54.4795, 13.2738, 58.3128, 25.2738, 60.1462, 31.7738, 55.1462, 42.4405, 54.6462, 44.4405, 42.9795, 50.7738, 29.4795, 43.2738, 14.1462, 23.7738, 6.14617, 3.77383, 4.81283, 5.27383, 9.9795 )
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
 
-[node name="Skeleton2D" type="Skeleton2D" parent="BodyParts"]
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
 
-[node name="Hip" type="Bone2D" parent="BodyParts/Skeleton2D"]
+[node name="Hip" type="Bone2D" parent="Skeleton2D"]
 position = Vector2( -1.81557, -11.6302 )
 rest = Transform2D( 1, 0, 0, 1, -1.81557, -11.6302 )
 
-[node name="Chest" type="Bone2D" parent="BodyParts/Skeleton2D/Hip"]
+[node name="Chest" type="Bone2D" parent="Skeleton2D/Hip"]
 position = Vector2( 1.14758, -21.0325 )
 rest = Transform2D( 1, 0, 0, 1, 0.647575, -20.0325 )
 
-[node name="Head" type="Bone2D" parent="BodyParts/Skeleton2D/Hip/Chest"]
+[node name="Head" type="Bone2D" parent="Skeleton2D/Hip/Chest"]
 position = Vector2( -0.353556, -10.6066 )
 rotation = -1.55564
 rest = Transform2D( -0.0198237, -0.999803, 0.999803, -0.0198237, -0.353556, -10.6066 )
 default_length = 10.0
 
-[node name="RightArm" type="Bone2D" parent="BodyParts/Skeleton2D/Hip/Chest"]
+[node name="RightArm" type="Bone2D" parent="Skeleton2D/Hip/Chest"]
 position = Vector2( 18.5616, -1.76777 )
 rotation = 1.42975
 rest = Transform2D( 0.140575, 0.99007, -0.99007, 0.140575, 18.5616, -1.76777 )
 
-[node name="RightHand" type="Bone2D" parent="BodyParts/Skeleton2D/Hip/Chest/RightArm"]
+[node name="RightHand" type="Bone2D" parent="Skeleton2D/Hip/Chest/RightArm"]
 position = Vector2( 26.4229, -2.49758 )
 rotation = 0.564198
 rest = Transform2D( 0.845018, 0.534738, -0.534738, 0.845018, 26.4229, -2.49758 )
 default_length = 5.0
 
-[node name="LeftArm" type="Bone2D" parent="BodyParts/Skeleton2D/Hip/Chest"]
+[node name="LeftArm" type="Bone2D" parent="Skeleton2D/Hip/Chest"]
 position = Vector2( -18.9151, -0.883884 )
 rotation = 1.67412
 rest = Transform2D( -0.09629, 0.995353, -0.995353, -0.09629, -18.9151, -0.883884 )
 
-[node name="LeftHand" type="Bone2D" parent="BodyParts/Skeleton2D/Hip/Chest/LeftArm"]
+[node name="LeftHand" type="Bone2D" parent="Skeleton2D/Hip/Chest/LeftArm"]
 position = Vector2( 22.857, 3.1169 )
 rotation = -0.641806
 rest = Transform2D( 0.801016, -0.598643, 0.598643, 0.801016, 22.857, 3.1169 )
 default_length = 5.0
 
-[node name="RightLeg" type="Bone2D" parent="BodyParts/Skeleton2D/Hip"]
+[node name="RightLeg" type="Bone2D" parent="Skeleton2D/Hip"]
 position = Vector2( 11.1369, 4.24265 )
 rotation = 1.59109
 rest = Transform2D( -0.0435172, 0.999053, -0.999053, -0.0435172, 11.1369, 4.24265 )
 default_length = 10.0
 
-[node name="LeftLeg" type="Bone2D" parent="BodyParts/Skeleton2D/Hip"]
+[node name="LeftLeg" type="Bone2D" parent="Skeleton2D/Hip"]
 position = Vector2( -10.4298, 3.88909 )
 rotation = 1.54687
 rest = Transform2D( 0.0326533, 0.999467, -0.999467, 0.0326533, -10.4298, 3.88909 )
