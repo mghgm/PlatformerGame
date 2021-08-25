@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
 const GRAVITY = 30
-const WALKING_SPEED = 100
-const CROUCHING_SPEED = 50
+const WALKING_SPEED = 200
+const CROUCHING_SPEED = 100
 
 
 
@@ -45,14 +45,14 @@ func input_checker():
 		crouching_ends = true
 
 func moving():
-	#if not is_on_floor():
-		#velocity.y += GRAVITY
+	if not is_on_floor():
+		velocity.y += GRAVITY # gravity
 	if crouching:
 		velocity.x = direction * CROUCHING_SPEED
 	else:
 		velocity.x = direction * WALKING_SPEED
 	# moving
-	move_and_slide(velocity, Vector2.UP)
+	velocity = move_and_slide(velocity, Vector2.UP)
 	# decrease in velocity if not moving
 	velocity.x = lerp(velocity.x, 0, 0.1)
 		
