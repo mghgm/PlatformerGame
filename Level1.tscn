@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Level1/Main.png" type="Texture" id=1]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Level1/FrontPlayerObjects.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 445.534, 109.774 )
+
+[node name="Level1" type="Node2D"]
+
+[node name="BehindPlayerObjects" type="Sprite" parent="."]
+position = Vector2( 1920, 1080 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2983.27, 615.911 )
+scale = Vector2( 2, 2 )
+
+[node name="FrontPlayerOjects" type="Sprite" parent="."]
+position = Vector2( 1920, 1080 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlatformsCollisions" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DownPlatform" type="StaticBody2D" parent="PlatformsCollisions"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PlatformsCollisions/DownPlatform"]
+polygon = PoolVector2Array( -1.09424, 1577.56, 167.735, 1539.76, 341.604, 1517.08, 538.152, 1547.32, 669.184, 1605.28, 795.176, 1708.59, 969.045, 1834.58, 1118.64, 1911.08, 1334.4, 1965.02, 1586.11, 1980.01, 1846.82, 1953.04, 2038.6, 1872.13, 2317.29, 1710.31, 2563.01, 1581.46, 2680.88, 1542.5, 2797.74, 1542.5, 2926.6, 1572.47, 3070.44, 1626.41, 3187.3, 1701.32, 3316.16, 1803.21, 3427.03, 1878.12, 3492.96, 1899.1, 3529.03, 1908.09, 3834.68, 1911.08, 3837.68, 2156.81, -1.97461, 2159.8 )
+
+[node name="RightPlatform" type="StaticBody2D" parent="PlatformsCollisions"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformsCollisions/RightPlatform"]
+position = Vector2( 3393.57, 918.871 )
+shape = SubResource( 1 )
+
+[node name="LeftPlatform" type="StaticBody2D" parent="PlatformsCollisions"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PlatformsCollisions/LeftPlatform"]
+polygon = PoolVector2Array( 1.1969, 864.969, 71.9075, 898.91, 145.447, 921.537, 235.956, 930.023, 349.093, 921.537, 453.745, 884.768, 572.539, 825.371, 677.191, 771.631, 770.529, 726.376, 878.009, 686.778, 1013.77, 661.322, 1132.57, 661.322, 1254.19, 686.778, 1333.39, 726.376, 1449.35, 760.317, 1585.12, 788.601, 1675.63, 805.572, 1814.22, 822.543, 1927.36, 839.513, 2000.89, 847.998, 2074.43, 847.998, 2133.83, 842.342, 2136.66, 1048.82, -4.45996, 1113.87 )
