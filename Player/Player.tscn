@@ -1,13 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assets/Player/body_parts.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 5.24077
-height = 286.378
-
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 resource_name = "Crouch"
 length = 0.45
 loop = true
@@ -73,7 +69,7 @@ tracks/4/keys = {
 "values": [ -89.1317, -77.2175, -89.1317, -89.1317 ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 length = 0.45
 loop = true
 step = 0.15
@@ -138,7 +134,7 @@ tracks/4/keys = {
 "values": [ -89.1317, -82.462, -99.6218, -89.1317 ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 resource_name = "WalkToCrouch"
 length = 0.5
 tracks/0/type = "value"
@@ -214,10 +210,25 @@ tracks/5/keys = {
 "values": [ Vector2( -10.4298, 3.88909 ), Vector2( -10.4298, 3.88909 ) ]
 }
 
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 14.277, 21.5633 )
+
+[sub_resource type="CircleShape2D" id=5]
+
+[sub_resource type="CapsuleShape2D" id=6]
+radius = 4.58323
+
+[sub_resource type="CircleShape2D" id=7]
+radius = 20.9093
+
 [node name="Player" type="KinematicBody2D"]
+collision_mask = 6
 script = ExtResource( 2 )
 
 [node name="BodyParts" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="RightLeg" type="Polygon2D" parent="BodyParts"]
 position = Vector2( -76.4196, -140.158 )
@@ -371,6 +382,9 @@ uv = PoolVector2Array( -0.726166, 17.8128, -0.559502, 54.3128, 10.7738, 54.4795,
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Hip" type="Bone2D" parent="Skeleton2D"]
 position = Vector2( -1.53496, -11.6302 )
@@ -421,12 +435,34 @@ rotation = 1.54687
 rest = Transform2D( 0.0326533, 0.999467, -0.999467, 0.0326533, -10.4298, 3.88909 )
 default_length = 10.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1.70792, 17.0026 )
-rotation = 1.5708
-shape = SubResource( 1 )
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Crouch = SubResource( 2 )
-anims/Walk = SubResource( 3 )
-anims/WalkToCrouch = SubResource( 4 )
+anims/Crouch = SubResource( 1 )
+anims/Walk = SubResource( 2 )
+anims/WalkToCrouch = SubResource( 3 )
+
+[node name="Body" type="CollisionShape2D" parent="."]
+position = Vector2( -0.222717, -19.1543 )
+shape = SubResource( 4 )
+
+[node name="RightLeg" type="CollisionShape2D" parent="."]
+position = Vector2( 10.0226, 1.78181 )
+shape = SubResource( 5 )
+
+[node name="LeftLeg" type="CollisionShape2D" parent="."]
+position = Vector2( -10.0226, 1.78181 )
+shape = SubResource( 5 )
+
+[node name="RightArm" type="CollisionShape2D" parent="."]
+position = Vector2( 24.0543, -20.4907 )
+rotation = -0.258744
+shape = SubResource( 6 )
+
+[node name="LeftArm" type="CollisionShape2D" parent="."]
+position = Vector2( -23.8315, -19.5998 )
+rotation = 0.17287
+shape = SubResource( 6 )
+
+[node name="Head" type="CollisionShape2D" parent="."]
+position = Vector2( -1.33635, -52.563 )
+rotation = 0.17287
+shape = SubResource( 7 )
