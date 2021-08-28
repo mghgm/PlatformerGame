@@ -226,9 +226,6 @@ collision_mask = 6
 script = ExtResource( 2 )
 
 [node name="BodyParts" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="RightLeg" type="Polygon2D" parent="BodyParts"]
 position = Vector2( -76.4196, -140.158 )
@@ -382,9 +379,6 @@ uv = PoolVector2Array( -0.726166, 17.8128, -0.559502, 54.3128, 10.7738, 54.4795,
 bones = [ NodePath("Hip"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/Head"), PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ), NodePath("Hip/Chest/RightArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/RightArm/RightHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/Chest/LeftArm/LeftHand"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/LeftLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hip/RightLeg"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Hip" type="Bone2D" parent="Skeleton2D"]
 position = Vector2( -1.53496, -11.6302 )
